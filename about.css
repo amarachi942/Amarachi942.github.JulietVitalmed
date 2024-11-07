@@ -1,0 +1,36 @@
+.need{
+	background-color:steelblue;
+	margin-top: 30px;
+	padding-left:50px ;
+	line-height: 40px;
+	color: white;
+}
+.need h2{
+	text-align: center;
+	width:30% ;
+/*	padding:20px;*/
+	border-radius: 5px 30px;
+	padding-top: 10px;
+	margin-top: 10px;
+	background-color:white;
+	color:blue;
+	margin-left: 450px;
+}
+.need h2:hover{
+	color: green;
+}
+.need p{
+	padding-left: 30px;
+	font-size:20px ;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	text-align: center;
+	color: white;
+}
+.need li{
+	list-style: none;
+	color: white;
+	padding-left:30px;
+	font-size: 20px;
+}
+	

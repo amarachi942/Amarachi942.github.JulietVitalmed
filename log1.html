@@ -1,0 +1,81 @@
+
+
+<!-- HTML Login Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style type="text/css">
+        .form{
+            width: 30%;
+            margin: auto;
+            background-color: steelblue;
+            padding: 30px 30px;
+        }
+        h2{
+            text-align: center;
+            color: white;
+            font-size: 34px;
+            text-transform: uppercase;
+        }
+        input[type="email"], input[type="password"]{
+            padding: 15px;
+            margin: 15px 15px 15px 0px;
+            width: 90%;
+        }
+        input[type="submit"]{
+            width: 97%;
+            padding: 15px;
+            font-weight: bold;
+        }
+        h3{
+            text-align: center;
+            color: white;
+        }
+        a{
+            color:floralwhite;
+
+        }
+        a:hover{
+            color: blue;
+        }
+         button[type="submit"]{
+            width: 97%;
+            padding: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form">
+        <form method="post">
+            <h2> Login</h2>
+            <?php 
+
+                 if (isset($message)) {
+                    echo $message;
+                 }
+              ?>
+            <label>
+                <input type="email" name="email" placeholder="Enter email..."  autocomplete="off" required>
+            </label>
+            <label>
+                <input type="password" name="password" placeholder="Enter password..." autocomplete="off" required>
+            </label>
+            <!-- <input type="submit" name="login" value="Login"> -->
+            <button type="submit"  name="login" value="login" id="login" onclick="login()"><a href="medindex.html" style="text-decoration: none;color: black;">login</a></button>
+            <?php
+            if(isset($login_error)) : ?>
+                <div class="error"><?php echo$login_error;?></div>
+            <?php endif; ?>
+            <h3>New here? <a href="sign.html">Sign Up</a></h3>
+        </form>
+    </div>
+
+</body>
+</html>
+
+

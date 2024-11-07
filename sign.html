@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <style type="text/css">
+        .form{ 
+            width: 50%;
+            margin: auto;
+            background-color:steelblue;
+            padding: 30px 30px;
+        }
+        h2{
+            text-align: center;
+            color: white;
+            font-size: 34px;
+            text-transform: uppercase;
+        }
+        input[type="text"], input[type="email"], input[type="password"]{
+            padding: 15px;
+            margin: 15px 15px 15px 0px;
+            width: 90%;
+        }
+        input[type="submit"]{
+            width: 90%;
+            padding: 15px;
+            font-weight: bold;
+        }
+        h3{
+            text-align: center;
+            color: white;
+        }
+        a{
+            color: floralwhite;
+        }
+        a:hover{
+            color:blue ;
+        }
+        button[type="submit"]{
+            width: 90%;
+            padding: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form method="post">
+     
+            <!-- <a href="medindex.php"></a> -->
+            <!-- Header Inner -->
+            <div class="header-inner">
+                <div class="container">
+                    <div class="inner">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-12">
+                                <!-- Start Logo -->
+                                <div class="logo">
+                                    <p style="text-align: center;color: white;font-size: 20px;"><b>Welcome To Juliet</b>
+                                    <a href="medindex.html"><img src="img/logo1.png" alt="#" width="130px" height="95px"></a> <b>Website</b></p>
+                                </div>
+                                <!-- End Logo -->
+                                <!-- Mobile Nav -->
+                                <div class="mobile-nav"></div>
+                                <!-- End Mobile Nav -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 20px;">SIGN UP</h3>
+            <label><span style="color: white;">*</span>Surname
+                <input type="text" name="surname" placeholder="Enter surname..." required="">
+            </label>
+            <label><span style="color: white;">*</span>Othernames
+                <input type="text" name="othernames" placeholder="Enter othernames..." required="">
+            </label>
+            <br><label><span style="color: white;">*</span>Enter Email
+                <input type="email" name="email" placeholder="Enter email..." required="">
+            </label>
+          <!--  <label><span style="color: white;">*</span>Password
+                <input type="password" name="password" placeholder="Enter password..." required="">
+            </label> -->
+            <!-- <label><span style="color:white;">*</span>confirm password
+                <input type="password" name="cpassword" placeholder="Confirm password..." required="">
+            </label> -->
+            <!-- <input type="submit" name="register" value="Register"> -->
+            <button type="submit"  name="register" value="login" id="login" onclick="login()"><a href="medindex.html" style="text-decoration: none;color: black;">Register</a></button>
+            <h3>Already registered? <a href="log1.html">Login</a></h3>
+        </form>
+    </div>
+
+</body>
+</html>
